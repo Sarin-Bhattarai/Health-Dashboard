@@ -53,6 +53,12 @@ a {
   color: #000 !important;
 }
 
+.hr {
+  border-radius: 10px;
+  height: 3px;
+  background-color: #000;
+}
+
 /* --------------Dashboard--------------  */
 
 .sidebar {
@@ -60,7 +66,7 @@ a {
   background: #6aab9c !important;
   position: sticky !important;
   overflow: auto !important;
-  min-height: 90vh !important;
+  max-height: 90vh !important;
   top: 0 !important;
   left: 0 !important;
   border-radius: 10px !important;

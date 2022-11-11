@@ -1,0 +1,15 @@
+.covid {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.covid-card {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.covid-card h5 {
+  font-size: 14px;
+  font-weight: bold;
+}

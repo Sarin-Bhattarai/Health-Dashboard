@@ -1,0 +1,57 @@
+.hospital {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.hospitality-card {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  background-color: #fff;
+  height: 400px;
+}
+
+.element-card {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 120px;
+}
+
+.element-card p {
+  margin-top: -5px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.mt-32 p {
+  opacity: 0.8;
+}
+
+.graph-card {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  background: none !important;
+  margin-top: 20px !important;
+}
+
+.appointment-form {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #88bcb0;
+  border: 1px solid #88bcb0;
+  border-radius: 3px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  width: 22rem;
+  cursor: pointer;
+}

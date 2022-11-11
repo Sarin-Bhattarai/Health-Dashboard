@@ -16,6 +16,8 @@ import { AiOutlineHome } from "react-icons/ai";
 import Virtual from "./I-health-virtual/Virtual";
 import Header from "../components/header/Header";
 import Heart from "../resources/images/heart-beat.png";
+import Hospital from "./hospital-dashboard/hospital/Hospital";
+import Covid from "./hospital-dashboard/covid-19/Covid";
 
 const { Sider, Content } = Layout;
 
@@ -135,6 +137,8 @@ const Main = () => {
         <Content className="main-content">
           <Header />
           <Routes>
+            <Route path="/dashboard/hospital" element={<Hospital />} />
+            <Route path="/dashboard/covid" element={<Covid />} />
             <Route path="/dashboard/virtual" element={<Virtual />} />
           </Routes>
         </Content>
