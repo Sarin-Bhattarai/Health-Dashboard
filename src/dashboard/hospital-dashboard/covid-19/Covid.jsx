@@ -6,7 +6,7 @@ import RadarChart from "../../../components/charts/Radar";
 
 const Covid = () => {
   return (
-    <section className="covid">
+    <section className="global">
       <Row>
         <Col span={24}>
           <div className="covid-card">

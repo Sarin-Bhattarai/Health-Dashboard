@@ -59,6 +59,11 @@ a {
   background-color: #000;
 }
 
+.global {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
 /* --------------Dashboard--------------  */
 
 .sidebar {

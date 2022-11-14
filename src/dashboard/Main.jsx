@@ -16,8 +16,12 @@ import { AiOutlineHome } from "react-icons/ai";
 import Virtual from "./I-health-virtual/Virtual";
 import Header from "../components/header/Header";
 import Heart from "../resources/images/heart-beat.png";
-import Hospital from "./hospital-dashboard/hospital/Hospital";
 import Covid from "./hospital-dashboard/covid-19/Covid";
+import Hospital from "./hospital-dashboard/hospital/Hospital";
+import Doctors from "./doctor/Doctors";
+import AddDoctor from "./doctor/AddDoctor";
+import Appointment from "./doctor/Appointment";
+import DoctorProfile from "./doctor/DoctorProfile";
 
 const { Sider, Content } = Layout;
 
@@ -54,11 +58,51 @@ const Main = () => {
       key: "/dashboard/doctor",
       icon: <MdPersonOutline size={17} />,
       label: "Doctor",
+      children: [
+        {
+          key: "/dashboard/doctor-all",
+          label: "All Doctors",
+        },
+        {
+          key: "/dashboard/doctor-add",
+          label: "Add Doctor",
+        },
+        {
+          key: "/dashboard/doctor-appointment",
+          label: "Appointment",
+        },
+        {
+          key: "/dashboard/doctor-profile",
+          label: "Doctors Profile",
+        },
+        {
+          key: "/dashboard/doctor-schedule",
+          label: "Doctor Schedule",
+        },
+      ],
     },
     {
       key: "/dashboard/patient",
       icon: <MdAccessible size={17} />,
       label: "Patient",
+      children: [
+        {
+          key: "/dashboard/patient-list",
+          label: "Patient List",
+        },
+        {
+          key: "/dashboard/patient-add",
+          label: "Add Patient",
+        },
+        {
+          key: "/dashboard/patient-profile",
+          label: "Patient Profile",
+        },
+        {
+          key: "/dashboard/patient-invoices",
+          label: "Patient Invoices",
+        },
+      ],
     },
     {
       key: "/dashboard/accidents",
@@ -79,11 +123,35 @@ const Main = () => {
       key: "/dashboard/accounts",
       icon: <MdSwitchAccount size={17} />,
       label: "Accounts",
+      children: [
+        {
+          key: "/dashboard/accounts-invoices",
+          label: "Invoices",
+        },
+        {
+          key: "/dashboard/accounts-payments",
+          label: "Payments",
+        },
+        {
+          key: "/dashboard/accounts-expenses",
+          label: "Expenses",
+        },
+      ],
     },
     {
       key: "/dashboard/app",
       icon: <IoIosApps size={17} />,
       label: "App",
+      children: [
+        {
+          key: "/dashboard/app-calandar",
+          label: "Calandar",
+        },
+        {
+          key: "/dashboard/app-communication",
+          label: "Communication",
+        },
+      ],
     },
   ];
   return (
@@ -140,6 +208,16 @@ const Main = () => {
             <Route path="/dashboard/hospital" element={<Hospital />} />
             <Route path="/dashboard/covid" element={<Covid />} />
             <Route path="/dashboard/virtual" element={<Virtual />} />
+            <Route path="/dashboard/doctor-all" element={<Doctors />} />
+            <Route path="/dashboard/doctor-add" element={<AddDoctor />} />
+            <Route
+              path="/dashboard/doctor-profile"
+              element={<DoctorProfile />}
+            />
+            <Route
+              path="/dashboard/doctor-appointment"
+              element={<Appointment />}
+            />
           </Routes>
         </Content>
       </Layout>

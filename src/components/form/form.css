@@ -1,0 +1,44 @@
+.form-card {
+  border: 1px solid #eae8e8;
+  padding: 12px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.doc-form {
+  margin-top: 18px !important;
+}
+
+.input-row {
+  gap: 1em;
+  margin-bottom: 5px;
+}
+
+.add-input {
+  height: 40px !important;
+  width: 36rem !important;
+}
+
+.link-input {
+  height: 40px !important;
+  width: 24rem !important;
+}
+
+.add-text {
+  width: 73.5rem !important;
+}
+
+.ant-form-vertical .ant-form-item-label > label {
+  font-weight: 600;
+}
+
+span.ant-radio + * {
+  font-weight: bold;
+}
+
+.form-btn {
+  font-weight: bold !important;
+  color: #ffffff !important;
+  background-color: #6aab9c !important;
+  border-radius: 3px !important;
+}

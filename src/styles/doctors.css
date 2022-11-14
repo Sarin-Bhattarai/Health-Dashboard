@@ -1,0 +1,54 @@
+/* --------------Doctors-css--------------  */
+
+.global h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.doctor-card {
+  border: 1px solid #eae8e8;
+  padding: 12px;
+  background-color: #ffffff;
+  height: 250px;
+  margin-top: 20px;
+  text-align: center;
+  width: 280px;
+}
+
+.doctor-card img {
+  border-radius: 50%;
+}
+
+.avatar-profile {
+  border: 1px solid #d3d3d3;
+  padding: 3px;
+}
+
+/* --------------Doctors-css--------------  */
+
+/* ---------------Doctor-Profile-css--------------  */
+
+.docProfile-card {
+  border: 1px solid #eae8e8;
+  padding: 12px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.doc-heading h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.doc-heading h4 {
+  font-weight: bold;
+  color: gray;
+  font-size: 13px;
+}
+
+.doc-heading p {
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* ---------------Doctor-Profile-css--------------  */

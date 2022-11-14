@@ -12,7 +12,7 @@ import VerticalBarChart from "../../../components/charts/VerticalBarChart";
 const Hospital = () => {
   const [value, onChange] = useState(new Date());
   return (
-    <section className="hospital">
+    <section className="global">
       <Row
         style={{
           marginBottom: "15px",

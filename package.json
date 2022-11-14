@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.24.1",
     "chart.js": "^3.9.1",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",
     "react-chartjs-2": "^4.3.1",
