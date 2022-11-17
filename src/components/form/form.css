@@ -19,6 +19,16 @@
   width: 36rem !important;
 }
 
+.modal-input {
+  height: 40px !important;
+  width: 14rem !important;
+}
+
+.single-modal-input {
+  height: 40px !important;
+  width: 30rem !important;
+}
+
 .link-input {
   height: 40px !important;
   width: 24rem !important;

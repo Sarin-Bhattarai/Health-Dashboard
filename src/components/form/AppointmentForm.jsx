@@ -1,8 +1,7 @@
 import React from "react";
 import "./form.css";
 import moment from "moment";
-import { AiOutlineUpload } from "react-icons/ai";
-import { Col, Form, Row, Input, DatePicker, Upload, Button, Radio } from "antd";
+import { Col, Form, Row, Input, DatePicker, Button, Radio } from "antd";
 const { TextArea } = Input;
 
 const AppointmentForm = () => {

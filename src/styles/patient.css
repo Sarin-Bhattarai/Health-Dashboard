@@ -1,0 +1,18 @@
+.patient-card {
+  border: 1px solid #ece8e8;
+  padding: 12px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 180px;
+}
+
+.patient-card h5 {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.patient-card h6 {
+  font-size: 20px !important;
+}

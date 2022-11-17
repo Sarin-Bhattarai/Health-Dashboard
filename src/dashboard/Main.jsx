@@ -22,6 +22,11 @@ import Doctors from "./doctor/Doctors";
 import AddDoctor from "./doctor/AddDoctor";
 import Appointment from "./doctor/Appointment";
 import DoctorProfile from "./doctor/DoctorProfile";
+import Schedule from "./doctor/Schedule";
+import AddPatient from "./patient/AddPatient";
+import PatientProfile from "./patient/PatientProfile";
+import PatientList from "./patient/PatientList";
+import PatientInvoices from "./patient/PatientInvoices";
 
 const { Sider, Content } = Layout;
 
@@ -210,6 +215,7 @@ const Main = () => {
             <Route path="/dashboard/virtual" element={<Virtual />} />
             <Route path="/dashboard/doctor-all" element={<Doctors />} />
             <Route path="/dashboard/doctor-add" element={<AddDoctor />} />
+            <Route path="/dashboard/doctor-schedule" element={<Schedule />} />
             <Route
               path="/dashboard/doctor-profile"
               element={<DoctorProfile />}
@@ -217,6 +223,16 @@ const Main = () => {
             <Route
               path="/dashboard/doctor-appointment"
               element={<Appointment />}
+            />
+            <Route path="/dashboard/patient-add" element={<AddPatient />} />
+            <Route path="/dashboard/patient-list" element={<PatientList />} />
+            <Route
+              path="/dashboard/patient-invoices"
+              element={<PatientInvoices />}
+            />
+            <Route
+              path="/dashboard/patient-profile"
+              element={<PatientProfile />}
             />
           </Routes>
         </Content>

@@ -1,12 +1,55 @@
-import React from "react";
-import { Row, Col } from "antd";
+import React, { createElement, useState } from "react";
+import { Row, Col, Avatar, Comment, Tooltip } from "antd";
 import "../../styles/doctors.css";
 import Profile2 from "../../resources/images/avatar.jpg";
 import { GiSmartphone } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { HiOutlineMail, HiOutlineCake } from "react-icons/hi";
+import Star from "../../resources/images/star.png";
+import Like from "../../resources/images/like.png";
+import Improve from "../../resources/images/improve.png";
+import {
+  DislikeFilled,
+  DislikeOutlined,
+  LikeFilled,
+  LikeOutlined,
+} from "@ant-design/icons";
+import PieChart from "../../components/charts/doctor-charts/PieChart";
+import HLineChart from "../../components/charts/doctor-charts/HLineChart";
+import PLineChart from "../../components/charts/doctor-charts/PLineChart";
 
 const DoctorProfile = () => {
+  const [likes, setLikes] = useState(0);
+  const [dislikes, setDislikes] = useState(0);
+  const [action, setAction] = useState(null);
+
+  const like = () => {
+    setLikes(1);
+    setDislikes(0);
+    setAction("liked");
+  };
+  const dislike = () => {
+    setLikes(0);
+    setDislikes(1);
+    setAction("disliked");
+  };
+
+  const actions = [
+    <Tooltip key="comment-basic-like" title="Like">
+      <span onClick={like}>
+        {createElement(action === "liked" ? LikeFilled : LikeOutlined)}
+        <span className="comment-action">{likes}</span>
+      </span>
+    </Tooltip>,
+    <Tooltip key="comment-basic-dislike" title="Dislike">
+      <span onClick={dislike}>
+        {React.createElement(
+          action === "disliked" ? DislikeFilled : DislikeOutlined
+        )}
+        <span className="comment-action">{dislikes}</span>
+      </span>
+    </Tooltip>,
+  ];
   return (
     <section className="global">
       <Row className="docProfile-card">
@@ -116,10 +159,172 @@ const DoctorProfile = () => {
                 <div className="docProfile-card">
                   <h1>4.5</h1>
                   <p>based on 1,032 ratings</p>
+                  <img
+                    style={{
+                      width: "100%",
+                      marginBottom: "30px",
+                    }}
+                    src={Star}
+                    alt="stars"
+                  />
+                  <img
+                    style={{
+                      width: "100%",
+                      marginBottom: "30px",
+                    }}
+                    src={Like}
+                    alt="like"
+                  />
+                  <img
+                    style={{
+                      width: "100%",
+                    }}
+                    src={Improve}
+                    alt="improve"
+                  />
                 </div>
               </Col>
               <Col span={16}>
-                <div className="docProfile-card">6</div>
+                <div className="docProfile-card">
+                  <Comment
+                    actions={actions}
+                    author={
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                        href=" "
+                      >
+                        Han Solo
+                      </a>
+                    }
+                    avatar={
+                      <Avatar
+                        src="https://joeschmoe.io/api/v1/random"
+                        alt="Han Solo"
+                      />
+                    }
+                    content={
+                      <p>
+                        Great experience as a first timer barely waited to be
+                        helped when I checked in. The staff and Dr. (Name) were
+                        all very friendly and helpful. I especially loved how
+                        Dr.Joan Wilson really took his time to explain my
+                        conditions with me as well as my treatment options.
+                      </p>
+                    }
+                    datetime={
+                      <Tooltip title="2016-11-22 11:22:33">
+                        <span>8 hours ago</span>
+                      </Tooltip>
+                    }
+                  />
+                </div>
+                <div className="docProfile-card">
+                  <Comment
+                    actions={actions}
+                    author={
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                        href=" "
+                      >
+                        Han Solo
+                      </a>
+                    }
+                    avatar={
+                      <Avatar
+                        src="https://joeschmoe.io/api/v1/random"
+                        alt="Han Solo"
+                      />
+                    }
+                    content={
+                      <p>
+                        Great experience as a first timer barely waited to be
+                        helped when I checked in. The staff and Dr. (Name) were
+                        all very friendly and helpful. I especially loved how
+                        Dr.Joan Wilson really took his time to explain my
+                        conditions with me as well as my treatment options.
+                      </p>
+                    }
+                    datetime={
+                      <Tooltip title="2016-11-22 11:22:33">
+                        <span>8 hours ago</span>
+                      </Tooltip>
+                    }
+                  />
+                </div>
+                <div className="docProfile-card">
+                  <Comment
+                    actions={actions}
+                    author={
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                        href=" "
+                      >
+                        Han Solo
+                      </a>
+                    }
+                    avatar={
+                      <Avatar
+                        src="https://joeschmoe.io/api/v1/random"
+                        alt="Han Solo"
+                      />
+                    }
+                    content={
+                      <p>
+                        Great experience as a first timer barely waited to be
+                        helped when I checked in. The staff and Dr. (Name) were
+                        all very friendly and helpful. I especially loved how
+                        Dr.Joan Wilson really took his time to explain my
+                        conditions with me as well as my treatment options.
+                      </p>
+                    }
+                    datetime={
+                      <Tooltip title="2016-11-22 11:22:33">
+                        <span>8 hours ago</span>
+                      </Tooltip>
+                    }
+                  />
+                </div>
+                <div className="docProfile-card">
+                  <Comment
+                    actions={actions}
+                    author={
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                        href=" "
+                      >
+                        Han Solo
+                      </a>
+                    }
+                    avatar={
+                      <Avatar
+                        src="https://joeschmoe.io/api/v1/random"
+                        alt="Han Solo"
+                      />
+                    }
+                    content={
+                      <p>
+                        Great experience as a first timer barely waited to be
+                        helped when I checked in. The staff and Dr. (Name) were
+                        all very friendly and helpful. I especially loved how
+                        Dr.Joan Wilson really took his time to explain my
+                        conditions with me as well as my treatment options.
+                      </p>
+                    }
+                    datetime={
+                      <Tooltip title="2016-11-22 11:22:33">
+                        <span>8 hours ago</span>
+                      </Tooltip>
+                    }
+                  />
+                </div>
               </Col>
             </Row>
           </div>
@@ -127,12 +332,15 @@ const DoctorProfile = () => {
         <Col span={8}>
           <div className="docProfile-card">
             <h6>Doctors Expertabilities</h6>
+            <PieChart />
           </div>
           <div className="docProfile-card">
             <h6>Health Survey</h6>
+            <HLineChart />
           </div>
           <div className="docProfile-card">
             <h6>Patient Survey</h6>
+            <PLineChart />
           </div>
         </Col>
       </Row>
